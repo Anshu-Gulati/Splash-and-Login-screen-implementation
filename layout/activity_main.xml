@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+
+
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="use your email address"
+        android:textColor="#A69F9F"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/a"
+        android:id="@+id/nameEdt"
+        android:textColorHint="#A6A0A0"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/change_background"
+        android:padding="10dp"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/b"
+        android:id="@+id/emailEdt"
+        android:textColorHint="#A6A0A0"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/change_background"
+        android:padding="10dp"
+
+    />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/c"
+            android:id="@+id/passEdt"
+            android:background="@drawable/change_background"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="#A6A0A0"
+            />
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm password"
+        android:textColorHint="#A6A0A0"
+            android:id="@+id/confirmEdt"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:layout_marginHorizontal="15dp"
+            android:background="@drawable/change_background"
+        android:padding="10dp"
+
+        />
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREATE ACCOUNT"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:id="@+id/createBtn"
+        android:background="@drawable/round_corners"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="15dp"
+
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? "
+            android:linksClickable="true"
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:layout_toRightOf="@id/text_view"
+
+            android:layout_marginLeft="2dp"
+            android:textColor="@color/purple_200"
+            android:autoLink="web"
+            android:linksClickable="true"
+            />
+    </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
